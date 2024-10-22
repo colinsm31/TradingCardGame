@@ -1,0 +1,326 @@
+:root{
+  --common-color: rgb(215, 215, 215);
+  --uncommon-color: rgb(175, 255, 157);
+  --rare-color: rgb(246, 145, 255);
+  --legendary-color: linear-gradient(
+    110deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(255, 154, 0, 1) 10%,
+    rgba(208, 222, 33, 1) 20%,
+    rgba(79, 220, 74, 1) 30%,
+    rgba(63, 218, 216, 1) 40%,
+    rgba(47, 201, 226, 1) 50%,
+    rgba(28, 127, 238, 1) 60%,
+    rgba(95, 21, 242, 1) 70%,
+    rgba(186, 12, 248, 1) 80%,
+    rgba(251, 7, 217, 1) 90%,
+    rgba(255, 0, 0, 1) 100%
+  );
+}
+
+.common-card{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  align-items: center;
+  width: 175px;
+  height: 216px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--common-color);
+  font-size: 12px;
+  overflow-y: scroll;
+
+  .type-container{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 5px;
+
+    .type{
+      font-size: 12px;
+    }
+  }
+
+  .name{
+    font-weight: bold;
+  }
+
+  .stats{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    gap: 20px;
+
+    .health, .defense, .speed{
+      display: flex;
+      align-items: center;
+    }
+
+    .icon{
+      font-size: 12px;
+    }
+  }
+  
+  .abilities{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  
+    .ability{
+      display: flex;
+      flex-direction: column;
+
+      .ability-stats{
+        width: 100%;
+        display: flex;
+        gap: 25px;
+        .ability-name{
+          font-weight: bold;
+        }
+  
+        .ability-damage{
+          font-weight: bold;
+        }
+      }
+  
+
+      .ability-desc{
+        font-size: 12px;
+      }
+    }
+  }
+}
+.uncommon-card{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  align-items: center;
+  width: 175px;
+  height: 216px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--uncommon-color);
+  font-size: 12px;
+  overflow-y: scroll;
+
+  .type-container{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 5px;
+
+    .type{
+      font-size: 12px;
+    }
+  }
+
+  .name{
+    font-weight: bold;
+  }
+
+  .stats{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    gap: 20px;
+
+    .health, .defense, .speed{
+      display: flex;
+      align-items: center;
+    }
+
+    .icon{
+      font-size: 12px;
+    }
+  }
+  
+  .abilities{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  
+    .ability{
+      display: flex;
+      flex-direction: column;
+
+      .ability-stats{
+        width: 100%;
+        display: flex;
+        gap: 25px;
+        .ability-name{
+          font-weight: bold;
+        }
+  
+        .ability-damage{
+          font-weight: bold;
+        }
+      }
+  
+
+      .ability-desc{
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.rare-card{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  align-items: center;
+  width: 175px;
+  height: 216px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--rare-color);
+  font-size: 12px;
+  overflow-y: scroll;
+
+  .type-container{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 5px;
+
+    .type{
+      font-size: 12px;
+    }
+  }
+
+  .name{
+    font-weight: bold;
+  }
+
+  .stats{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    gap: 20px;
+
+    .health, .defense, .speed{
+      display: flex;
+      align-items: center;
+    }
+
+    .icon{
+      font-size: 12px;
+    }
+  }
+  
+  .abilities{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  
+    .ability{
+      display: flex;
+      flex-direction: column;
+
+      .ability-stats{
+        width: 100%;
+        display: flex;
+        gap: 25px;
+        .ability-name{
+          font-weight: bold;
+        }
+  
+        .ability-damage{
+          font-weight: bold;
+        }
+      }
+  
+
+      .ability-desc{
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.legendary-card{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  align-items: center;
+  width: 175px;
+  height: 216px;
+  padding: 10px;
+  border-radius: 5px;
+  background: var(--legendary-color);
+  font-size: 12px;
+  overflow-y: scroll;
+
+  .type-container{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 5px;
+
+    .type{
+      font-size: 12px;
+    }
+  }
+
+  .name{
+    font-weight: bold;
+  }
+
+  .stats{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    gap: 20px;
+
+    .health, .defense, .speed{
+      display: flex;
+      align-items: center;
+    }
+
+    .icon{
+      font-size: 12px;
+    }
+  }
+  
+  .abilities{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  
+    .ability{
+      display: flex;
+      flex-direction: column;
+
+      .ability-stats{
+        width: 100%;
+        display: flex;
+        gap: 25px;
+        .ability-name{
+          font-weight: bold;
+        }
+  
+        .ability-damage{
+          font-weight: bold;
+        }
+      }
+  
+
+      .ability-desc{
+        font-size: 12px;
+      }
+    }
+  }
+}
